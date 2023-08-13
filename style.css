@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* viewport units: vh (viewport height), vw, vmin (smallest between vh & vw) */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D5B79;
+  }
+  
+  header {
+    letter-spacing: 0.7vmin;
+    font-size: 5vmin;
+  }
+  
+  h1 {
+    color: grey;
+    font-size: 3.5vmin;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    gap: 1vmin;
+    margin-top: 2vmin;
+  }
+  
+  #board>div {
+    border: 0.6vmin solid #F24C3D;
+    border-radius: 10%;
+    font-size: 15vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .not-allowed {
+    cursor: not-allowed;
+  }
+  
+  button {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 5vmin;
+    padding: 2vmin;
+    font-size: 2vmin;
+    border-radius: 2vmin;
+    border: 0.4vmin solid #F24C3D;
+    color: #E8F6EF;
+    background-color: #1D5B79;
+    transition: 0.35s;
+    transition-timing-function: ease-in;
+  }
+  
+  button:hover {
+    color: #1D5B79;
+    background-color: #F24C3D;
+  
+  }
+  
