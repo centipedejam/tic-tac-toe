@@ -19,8 +19,7 @@ const IMG_LOOKUP = {
   let board; // 
   let winner;
   let turn;
-  let xScore;
-  let oScore;
+  
   
   /*----- cached elements  -----*/
   const messageEl = document.getElementById('message');
